@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: "Roboto", sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    }
+
+/* .container{
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    padding: 10px
+} */
+
+.card {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    height: 350px;
+    width: 250px;
+    margin-right: 3rem;
+   
+    
+
+}
+
+.card:hover .gradient {
+    opacity: 1;
+}
+
+.gradient {
+    position: absolute;
+    background-image: linear-gradient(0deg, #e90606, transparent);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.text {
+    color: rgb(211, 211, 211);
+}
+
+.time {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 2.2em;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    bottom: 100px;
+
+}
+
+/* bu{
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: 3px;
+    border: 3px solid cyan;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+
+}
+.sub{
+    background: cyan;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+input:hover sub{
+    width: 100%;
+} */
+#submit {
+    background-color: rgb(0, 0, 0);
+    font-size: large;
+    background: transparent;
+    position: relative;
+    top: 50px;
+
+    width: 100%;
+    height: 35px;
+    border-radius: 12px;
+
+}
+
+#submit:hover {
+    background-color: cyan;
+    color: black;
+    transition: 1s;
+    box-shadow: 10px 10px 10px #fff;
+}
+
+.heading {
+
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+
+    position: absolute;
+    bottom: 80%;
+    font-size: 56px;
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 1233px){
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .card{
+        margin: 10px;
+    }
+    .heading{
+        margin-top: 20px;
+    }
+}
